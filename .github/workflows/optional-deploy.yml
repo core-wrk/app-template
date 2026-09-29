@@ -1,0 +1,11 @@
+name: Optional deploy example
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy-example:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Configure your Cloudflare Pages, Render, or Cloud Run deployment here."

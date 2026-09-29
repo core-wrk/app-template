@@ -1,0 +1,14 @@
+{
+  "name": "@core-wrk/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "files": [
+    "eslint",
+    "typescript"
+  ],
+  "exports": {
+    "./typescript/*": "./typescript/*",
+    "./eslint/*": "./eslint/*"
+  }
+}

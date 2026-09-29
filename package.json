@@ -1,0 +1,34 @@
+{
+  "name": "core-wrk-app-starter",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.15.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @core-wrk/web --filter @core-wrk/api dev",
+    "build": "pnpm run build:packages && pnpm --filter @core-wrk/api build && pnpm --filter @core-wrk/web build",
+    "build:packages": "pnpm --filter @core-wrk/shared build && pnpm --filter @core-wrk/db build",
+    "typecheck": "pnpm --filter @core-wrk/shared typecheck && pnpm --filter @core-wrk/db typecheck && pnpm --filter @core-wrk/api typecheck && pnpm --filter @core-wrk/web typecheck",
+    "lint": "eslint .",
+    "test": "pnpm --filter @core-wrk/shared test && pnpm --filter @core-wrk/api test && pnpm --filter @core-wrk/web test",
+    "verify": "./scripts/verify.sh",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:up": "docker compose up -d --wait postgres",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:seed": "pnpm --filter @core-wrk/db seed",
+    "db:reset": "./scripts/reset-local.sh"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@types/node": "^22.18.0",
+    "dotenv": "^17.4.2",
+    "drizzle-kit": "^0.31.4",
+    "eslint": "^9.35.0",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.42.0"
+  }
+}
