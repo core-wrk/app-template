@@ -102,14 +102,11 @@ finish with `pnpm verify`. Avoid ceremonial reports and premature platform compl
 
 ## Commercialization and white-labeling
 
-Core Wrk can use this as a consulting accelerator, licensed starter kit, implementation
-package, managed prototype platform, or base for vertical editions. Customer-specific
-logic and credentials do not belong in the core. Visible application metadata is kept in
-`packages/shared/src/config/branding.ts`; the repository itself may retain Core Wrk
-attribution. See [docs/commercialization.md](docs/commercialization.md).
+Core Wrk uses the starter for consulting, implementation, and managed deployments.
+Customer-specific logic and credentials belong in the applications built from it.
+Visible application metadata lives in `packages/shared/src/config/branding.ts`.
+See [docs/commercialization.md](docs/commercialization.md).
 
 ## License
 
-Licensed per buyer under the terms in [`LICENSE`](LICENSE): unlimited Applications, no
-resale or redistribution of the starter itself. See `LICENSE` before redistributing,
-reselling, modifying, or using this starter commercially.
+Copyright 2026 Core Wrk LLC. Licensed under the [Apache License 2.0](LICENSE).

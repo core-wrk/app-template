@@ -23,9 +23,5 @@ managed service.
 
 ## Licensing
 
-Decided 2026-09-16: a proprietary, per-buyer EULA (effective 2026-09-01, governed by South
-Carolina law). See [`LICENSE`](../LICENSE). Each purchaser may use the Software in unlimited
-Applications, including client and employer work, but may not resell, redistribute, or
-repackage the starter itself. This fits the no-account, single-download-link delivery model:
-the license is scoped to the individual buyer rather than a team or seat count, so it needs no
-license-key or account infrastructure to enforce.
+The starter is available under the [Apache License 2.0](../LICENSE). Developers can
+use, modify, and redistribute it, including for commercial projects, under those terms.
